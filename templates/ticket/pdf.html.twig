@@ -1,0 +1,26 @@
+<h1>Ticket de voyage</h1>
+
+<p>
+    <strong>Numéro :</strong> {{ ticket.numero }}
+</p>
+
+<p>
+    <strong>Client :</strong> {{ ticket.nomclient }}
+</p>
+
+<p>
+    <strong>Contact :</strong> {{ ticket.contactclient }}
+</p>
+
+<p>
+    <strong>Trajet :</strong>
+    {{ ticket.voyage.trajet.provenance }} - {{ ticket.voyage.trajet.destination }}
+</p>
+
+<p>
+    <strong>Date :</strong> {{ ticket.voyage.datedebut|date('d/m/Y H:i') }}
+</p>
+
+<p>
+    <strong>Montant :</strong> {{ ticket.prix }} FCFA
+</p>
